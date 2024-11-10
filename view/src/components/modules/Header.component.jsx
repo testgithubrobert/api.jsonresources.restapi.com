@@ -9,7 +9,7 @@ function Header(props) {
                 <br />
                 <p>{props.content}</p>
                 <br />
-                <a href="/token/register"><button type="button">Get Token</button></a>
+                <a href="/guide">see full guide</a>
             </article>
         </header>
     );

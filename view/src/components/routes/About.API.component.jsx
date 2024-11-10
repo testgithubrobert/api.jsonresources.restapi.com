@@ -1,5 +1,5 @@
-import NavigationBar from "./Navigation.bar.component";
-import Footer from "./Footer.component";
+import NavigationBar from "../modules/Navigation.bar.component";
+import Footer from "../modules/Footer.component";
 
 function AboutAPI() {
     return (
