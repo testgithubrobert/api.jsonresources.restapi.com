@@ -2,10 +2,19 @@
 const express = require("express");
 const router = express.Router();
 
+router.route("/").get((request, response) => {
+    this.response = response;
+    this.request = request;
+    this.response.contentType = "application/json";
+
+    this.response.status(Number(parseInt(200))).jsonp({ message: "Welcome to json resources api!" });
+});
+
+// handle api information, terms and privacy...
 var ApiInformation = require("../../model/json/api.information.json");
 
 // serve information about api
-router.route("/api/about-api").get((request, response) => {
+router.route("/about-api").get((request, response) => {
     this.response = response;
     this.request = request;
     this.response.statusCode = Number(200);
@@ -16,7 +25,7 @@ router.route("/api/about-api").get((request, response) => {
 });
 
 // serve information about api privacy
-router.route("/api/privacy").get((request, response) => {
+router.route("/privacy").get((request, response) => {
     this.response = response;
     this.request = request;
     this.response.statusCode = Number(200);
@@ -28,7 +37,7 @@ router.route("/api/privacy").get((request, response) => {
 });
 
 // serve information about api terms
-router.route("/api/terms").get((request, response) => {
+router.route("/terms").get((request, response) => {
     this.response = response;
     this.request = request;
     this.response.statusCode = Number(200);
@@ -38,20 +47,6 @@ router.route("/api/terms").get((request, response) => {
         ApiInformation["terms"]) 
     ? this.response.status(Number(parseInt(200))).json(ApiInformation["terms"]) : ""
 });
-
-/*
-    routers for all api resources handlers
-*/
-
-// -*users resource routes
-router.use("/users", require("./resources/api.users.resources.handler"));
-// -*photos resources routes
-router.use("/photos", require("./resources/api.photos.resources.handler"));
-// -*texts resources routes
-router.use("/texts", require("./resources/api.texts.resources.handler"));
-// -*posts resources routes
-router.use("/posts", require("./resources/api.posts.resources.handler"));
-
 
 // send a 404 response for undefined queries or routes
 router.use(require("../middleware/error/404.middleware.handler"));
