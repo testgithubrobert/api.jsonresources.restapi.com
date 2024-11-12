@@ -17,12 +17,12 @@ function Footer() {
         {
             id: String(`${uuid()}`),
             key: "Privacy",
-            href: "http://localhost:5000/api.jsonresources.restapi.com/privacy"
+            href: "http://localhost:4000/privacy"
         },
         {
             id: String(`${uuid()}`),
             key: "Terms",
-            href: "http://localhost:5000/api.jsonresources.restapi.com/terms"
+            href: "http://localhost:4000/terms"
         },
     ]);
 
@@ -38,7 +38,7 @@ function Footer() {
                         ))
                     }
                 </ul>
-                <p>developer.jsonresources.rest.com &copy;right {format(new Date(), "yyyy")}</p>
+                <p>jsonresources.restapi.com &copy;right {format(new Date(), "yyyy")}</p>
                 <br />
             </article>
         </footer>

@@ -84,7 +84,7 @@ function APIGuideComponentSection() {
                     </article>
                     <br /><br />
                     <br /><br />
-                    <p><strong>NOTE!:</strong> {String("Fetching json resources from this api using the http/https get method and use it in your projects for testing is allowed an also other http/https methods like put, delete and update are also supported by this api but the only thing is that as this api provides fakes data, there wont be any resources updated, deleted or created and saved to the databases you make from your projects while testing.")}</p>
+                    <p><strong>NOTE!:</strong> {String("Fetching json resources from this api using the http/https get method and use it in your projects for testing is allowed an also other http/https methods like put, delete and update are also supported by this api but the only thing is that as this api provides sampling json data which is fake data, there wont be any resources updated, deleted or created and saved to the databases you make from your projects while testing.")}</p>
                     <br /><br />
                     <br /><br />
                 </article>

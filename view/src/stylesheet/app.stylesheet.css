@@ -17,6 +17,7 @@ body {
     font-weight: calc(170 + 200);
     font-size: 1.1em;
 }
+
 main {
     flex: 1 0 auto;
     min-height: 60vh;
@@ -26,9 +27,11 @@ main {
     place-items: center;
     flex-direction: column;
 }
+
 :root {
     --primary-color: #0066ff;
 }
+
 #root {
     min-height: 100vh;
     width: min(100%, 100%);
@@ -68,7 +71,7 @@ nav[class="navigation-bar"] > div[class="logo"] > a :is(span) {
     font-size: 1.5em;
     font-weight: bold;
 }
-nav[class="navigation-bar"] > div[class="navigations"] {
+nav[class="navigation-bar"] > div[class="navigators"] {
     height: 3em;
     width: min(85%, 85%);
     display: flex;
@@ -76,7 +79,7 @@ nav[class="navigation-bar"] > div[class="navigations"] {
     place-items: center;
     flex-direction: row;
 }
-nav[class="navigation-bar"] > div[class="navigations"] > ul {
+nav[class="navigation-bar"] > div[class="navigators"] > ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -84,11 +87,11 @@ nav[class="navigation-bar"] > div[class="navigations"] > ul {
     gap: 1em;
     flex-flow: row nowrap;
 }
-nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) {
+nav[class="navigation-bar"] > div[class="navigators"] > ul :is(li) {
     list-style: none;
     list-style-type: none;
 }
-nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) :where(a) {
+nav[class="navigation-bar"] > div[class="navigators"] > ul :is(li) :where(a) {
     list-style: none;
     list-style-type: none;
     text-decoration: none;
