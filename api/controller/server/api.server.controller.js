@@ -26,13 +26,12 @@ connection.on("connection", (ws) => {
 const cookieParser = require("cookie-parser");
 api.use(cookieParser()); // allow api to accept use of cookies
 
-api.use(cors({ origin: "*", Credential: true }));
+api.use(cors({ origin: "*", Credential: Boolean(true) }));
 api.use((request, response, next) => {
   this.response = response;
   this.request = request;
 
   this.response.setHeader("Content-Type", "Application/json");
-  this.response.statusCode = 200;
   this.response.setHeader("Access-Control-Allow-Origins", "*");
   this.response.setHeader(
     "Access-Control-Allow-Methods",
@@ -47,7 +46,7 @@ api.use((request, response, next) => {
     "_VISITOR_PRIVACY_METADATA",
     btoa(ApiInformation.metadata["privacy"]),
     {
-      expires: Number(parseInt(new Date(Date.now * 1800000))),
+      expires: Number(parseInt(new Date(Date.now * Number(parseInt(1800000))))),
       httpOnly: Boolean(true),
     }
   );
@@ -55,7 +54,7 @@ api.use((request, response, next) => {
     "_VISITOR_TERMS_METADATA",
     btoa(ApiInformation.metadata["terms"]),
     {
-      expires: Number(parseInt(new Date(Date.now * 1800000))),
+      expires: Number(parseInt(new Date(Date.now * Number(parseInt(1800000))))),
       httpOnly: Boolean(true),
     }
   );
@@ -64,7 +63,7 @@ api.use((request, response, next) => {
     to allow use of cookies for the api
   */
   this.response.cookie("cookies_enabled", Boolean(true), {
-    expires: Number(parseInt(new Date(Date.now * 900000))),
+    expires: Number(parseInt(new Date(Date.now * Number(parseInt(900000))))),
     httpOnly: Boolean(false),
   });
 
