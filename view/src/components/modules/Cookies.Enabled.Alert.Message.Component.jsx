@@ -12,10 +12,11 @@ function CookiesAlertMessage(props) {
                     event.stopPropagation();
                     window.document.querySelector(".cookies-message-article").style.display = 'none';
                 }}>Continue</button>
+                
                 <button type="button" className="decline-cookies-button" onClick={(event) => {
                     event.stopPropagation();
                     window.document.querySelector(".cookies-message-article").style.display = 'none';
-                    window.location.href = "https://www.google.com"
+                    window.location.href = "about:blank"
                 }}>Close Site</button>
             </div>
         </article>

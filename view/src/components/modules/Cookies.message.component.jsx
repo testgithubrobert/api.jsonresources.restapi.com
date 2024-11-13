@@ -12,6 +12,7 @@ function CookiesMessage(props) {
                     event.stopPropagation();
                     window.document.querySelector(".cookies-message-article").style.display = 'none'
                 }}>Accept</button>
+                
                 <button type="button" className="decline-cookies-button" onClick={(event) => {
                     event.stopPropagation();
                     window.document.querySelector(".cookies-message-article").style.display = 'none'

@@ -254,6 +254,13 @@ section[class="about-api-section"] > article :is(p) {
     color: #101010;
     font-weight: calc(200 + 180);
 }
+section[class="about-api-section"] > article :is(p) > a {
+    font-size: 1em;
+    color: #101010;
+    font-weight: calc(200 + 180);
+    text-decoration-line: underline;
+    text-decoration-color: none;
+}
 
 /*  */
 section[class="api-guide-section"] {
@@ -280,7 +287,7 @@ section[class="api-guide-section"] > article :is(p) {
     font-size: 1em;
     color: #101010;
     font-weight: calc(200 + 180);
-} 
+}  
 section[class="api-guide-section"] > article :is(article) {
     height: 13em;
     width: min(100%, 80em);
@@ -415,46 +422,22 @@ footer[class="footer"] > article :is(p) {
 }
 
 /*  */
-nav[class="offline-page-nav"] {
-    height: 5em;
-    width: min(90%, 90%);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row
-}
-nav[class="offline-page-nav"] > span {
-    font-size: 1.5em;
-    font-weight: bold;
-}
 section[class="offline-page"] {
-    height: 30em;
+    height: 100vh;
     width: min(100%, 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: hsl(0, 0%, 10%);
 }
 section[class="offline-page"] > h1 {
-    font-size: 2em;
-    font-weight: calc(200 + 100);
+    font-size: 1.5em;
+    font-weight: normal;
     text-align: center;
+    color: #fff
 }
-section[class="offline-page"] > span {
-    text-align: center;
-    font-size: 4em;
-    font-weight: calc(200 + 200);
-}
-section[class="offline-page"] > button {
-    height: 3em;
-    width: min(100%, 10em);
-    border: none;
-    color: #fff;
-    background-color: var(--primary-color);
-    border-radius: .2em;
-    font-weight: bold;
-    cursor: pointer;
-}
+ 
 
 /*  */
 article[class="cookies-message-article"] {

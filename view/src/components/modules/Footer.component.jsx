@@ -29,7 +29,7 @@ function Footer() {
     return (
         <footer className="footer" id="">
             <article>
-                <span className="developer">Developed and managed by <a href="https://www.github.com/testgithubrobert/">robert sims</a> mern stack developer.</span>
+                <span className="developer">Developed and managed by <a href="https://robertsims.netlify.app">robert sims</a> mern stack developer.</span>
                 <ul onDoubleClick={() => { setKeys(keys) }}>
                     {
                         keys.map((key) => (

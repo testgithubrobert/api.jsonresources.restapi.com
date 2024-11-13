@@ -6,6 +6,7 @@ import APIGuideComponentSection from './components/routes/API.Guide.component';
 
 function App() {
     // check if client window if offline, if true, then send offline page
+    
     return ( !window.navigator.onLine ? <Routes>
       <Route path='/' Component={Main}></Route>
       <Route path='/about' Component={AboutAPI}></Route>
