@@ -5,7 +5,7 @@
     }
 
     /*  */
-    nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) :where(a) {
+    nav[class="navigation-bar"] > div[class="navigation"] > ul :is(li) :where(a) {
         font-size: .8em;
     }
 
@@ -112,7 +112,7 @@
 
 @media all and (max-width: 425px) {
         /*  */
-        nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) :where(a) {
+        nav[class="navigation-bar"] > div[class="navigation"] > ul :is(li) :where(a) {
             font-size: .8em;
         }
     
@@ -214,7 +214,7 @@
 
 @media all and (max-width: 375px) {
     /*  */
-    nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) :where(a) {
+    nav[class="navigation-bar"] > div[class="navigation"] > ul :is(li) :where(a) {
         font-size: .8em;
     }
 
@@ -296,6 +296,12 @@
     }
     section[class="api-guide-section"] > article {
         min-height: 60rem;
+    }
+    section[class="api-guide-section"] > article :is(h1) {
+        font-size: 1.3em;
+    } 
+    section[class="api-guide-section"] > article :is(p) {
+        font-size: .8em;
     }
 
     /*  */
@@ -315,7 +321,7 @@
 
 @media all and (max-width: 320px) {
     /*  */
-    nav[class="navigation-bar"] > div[class="navigations"] > ul :is(li) :where(a) {
+    nav[class="navigation-bar"] > div[class="navigation"] > ul :is(li) :where(a) {
         font-size: .8em;
     }
 
@@ -397,6 +403,12 @@
     }
     section[class="api-guide-section"] > article {
         min-height: 60rem;
+    }
+    section[class="api-guide-section"] > article :is(h1) {
+        font-size: 1.3em;
+    } 
+    section[class="api-guide-section"] > article :is(p) {
+        font-size: .8em;
     }
 
     /*  */

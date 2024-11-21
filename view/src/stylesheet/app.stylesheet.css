@@ -17,6 +17,9 @@ body {
     font-weight: calc(170 + 200);
     font-size: 1.1em;
 }
+p {
+    color: hsl(0, 0%, 15%);
+}
 
 main {
     flex: 1 0 auto;
@@ -102,8 +105,8 @@ nav[class="navigation-bar"] > div[class="navigators"] > ul :is(li) :where(a) {
 
 /* header */
 header[class="header"] {
-    height: 37em;
-    width: min(100%, 100%);
+    height: 90vh;
+    width: min(100%, 100vw);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,8 +237,8 @@ section[class="resources-section"] > article :is(ul) > li > a {
 
 /*  */
 section[class="about-api-section"] {
-    min-height: 27rem;
-    width: min(100%, 100%);
+    min-height: 80vh;
+    width: min(100%, 100vw);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,11 +250,11 @@ section[class="about-api-section"] > article {
     width: min(80%, 80%);
 }
 section[class="about-api-section"] > article :is(h1) {
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 section[class="about-api-section"] > article :is(p) {
     font-size: 1em;
-    color: #101010;
+    color: hsl(0, 0%, 10%);
     font-weight: calc(200 + 180);
 }
 section[class="about-api-section"] > article :is(p) > a {
