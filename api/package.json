@@ -29,14 +29,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/testgithubrobert/api.jsonresources.restapi.com_server.git"
+    "url": "git+https://github.com/testgithubrobert/api.jsonresources.restapi.com.git"
   },
   "keywords": [
     "node.js",
     "express.js"
   ],
   "bugs": {
-    "url": "https://github.com/testgithubrobert/api.jsonresources.restapi.com_server/issues"
+    "url": "https://github.com/testgithubrobert/api.jsonresources.restapi.com/issues"
   },
-  "homepage": "https://github.com/testgithubrobert/api.jsonresources.restapi.com_server#readme"
+  "homepage": "https://github.com/testgithubrobert/api.jsonresources.restapi.com#readme"
 }
