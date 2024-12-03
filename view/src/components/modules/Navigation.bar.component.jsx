@@ -16,7 +16,7 @@ function NavigationBar() {
         {
             id: String(`${uuid()}`),
             navigation: "Github",
-            href: "https://www.github.com/testgithubrobert/json-api"
+            href: "https://github.com/testgithubrobert/api.jsonresources.restapi.com"
         }
     ]);
 

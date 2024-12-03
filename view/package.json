@@ -28,5 +28,21 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "api.jsonresources.restapi.com ui design",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testgithubrobert/api.jsonresources.restapi.com-ui.git"
+  },
+  "keywords": [
+    "api",
+    "ui"
+  ],
+  "author": "robert sims",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/testgithubrobert/api.jsonresources.restapi.com-ui/issues"
+  },
+  "homepage": "https://github.com/testgithubrobert/api.jsonresources.restapi.com-ui#readme"
 }
