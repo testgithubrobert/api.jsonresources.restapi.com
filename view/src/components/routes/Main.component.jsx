@@ -11,27 +11,27 @@ function Main() {
         {
             id: uuid(),
             resource: "/resources",
-            href: "http://localhost:4000/resources"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/resources"
         },
         {
             id: uuid(),
             resource: "/resources/users",
-            href: "http://localhost:4000/resources/users"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/resources/users"
         },
         {
             id: uuid(),
             resource: "/resources/posts",
-            href: "http://localhost:4000/resources/posts"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/resources/posts"
         },
         {
             id: uuid(),
             resource: "/resources/texts",
-            href: "http://localhost:4000/resources/texts"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/resources/texts"
         },
         {
             id: uuid(),
             resource: "/resources/photos",
-            href: "http://localhost:4000/resources/photos"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/resources/photos"
         }
     ]);
 
@@ -48,7 +48,7 @@ function Main() {
                     <br />
                     <article>
                            <div>
-                                <textarea type="text" name="" id="get" readOnly aria-readonly value={String(`fetch("https://www.jsonresources.com/resources/users", { method: "GET", headers: { "Content-Type": "application/json" } })`)} />
+                                <textarea type="text" name="" id="get" readOnly aria-readonly value={String(`fetch("https://api-jsonresources-restapi-com-api.onrender.com/resources/users", { method: "GET", headers: { "Content-Type": "application/json" } })`)} />
                            </div>
                             <br />
                             <button type="button" className='' id='' onClick={(event) => {

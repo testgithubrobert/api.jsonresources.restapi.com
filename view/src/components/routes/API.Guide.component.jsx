@@ -23,7 +23,7 @@ function APIGuideComponentSection() {
                     <br />
                         <article>
                             <div>
-                                <textarea type="text" name="" id="get" readOnly aria-readonly value={String(`fetch("https://www.jsonresources.com/resources/users", { method: "GET", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} />
+                                <textarea type="text" name="" id="get" readOnly aria-readonly value={String(`fetch("https://api-jsonresources-restapi-com-api.onrender.com/resources/users", { method: "GET", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} />
                             </div>
                             <br />
                             <button type="button" className='' id='' onClick={(event) => {
@@ -40,7 +40,7 @@ function APIGuideComponentSection() {
                     <br />
                     <article>
                             <div>
-                                <textarea type="text" name="" id="post" readOnly aria-readonly value={String(`fetch("https://www.jsonresources.com/resources/users", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": " " },  body: JSON.stringify({ first_name: "", last_name: "", job: "", email: "" }) })`)} />
+                                <textarea type="text" name="" id="post" readOnly aria-readonly value={String(`fetch("https://api-jsonresources-restapi-com-api.onrender.com/resources/users", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": " " },  body: JSON.stringify({ first_name: "", last_name: "", job: "", email: "" }) })`)} />
                             </div>
                             <br />
                             <button type="button" className='' id='' onClick={(event) => {
@@ -57,7 +57,7 @@ function APIGuideComponentSection() {
                     <br />
                     <article>
                            <div>
-                                <textarea type="text" name="" id="delete" readOnly aria-readonly value={String(`fetch("https://www.jsonresources.com/resources/users/resource-id", { method: "DELETE", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} /> 
+                                <textarea type="text" name="" id="delete" readOnly aria-readonly value={String(`fetch("https://api-jsonresources-restapi-com-api.onrender.com/resources/users/resource-id", { method: "DELETE", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} /> 
                            </div>
                             <br />
                             <button type="button" className='' id='' onClick={(event) => {
@@ -74,7 +74,7 @@ function APIGuideComponentSection() {
                     <br />
                     <article>
                             <div>
-                                <textarea type="text" name="" id="put" readOnly aria-readonly value={String(`fetch("https://www.jsonresources.com/resources/users/resource-id", { method: "PUT", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} />
+                                <textarea type="text" name="" id="put" readOnly aria-readonly value={String(`fetch("https://api-jsonresources-restapi-com-api.onrender.com/resources/users/resource-id", { method: "PUT", headers: { "Content-Type": "application/json", "Authorization": " " } })`)} />
                             </div>
                             <br />
                             <button type="button" className='' id='' onClick={(event) => {
