@@ -1,35 +1,36 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { format } from 'date-fns';
+import { FaHeart } from "react-icons/fa";
 
 function Footer() {
     const [keys, setKeys] = useState([
         {
             id: String(`${uuid()}`),
             key: "Github",
-            href: "https://www.github.com/testgithubrobert/json-api"
+            href: "https://github.com/testgithubrobert/api.jsonresources.restapi.com"
         },
         {
             id: String(`${uuid()}`),
             key: "Developer",
-            href: "https://www.github.com/testgithubrobert/"
+            href: "https://www.github.com/testgithubrobert"
         },
         {
             id: String(`${uuid()}`),
             key: "Privacy",
-            href: "http://localhost:4000/privacy"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/privacy"
         },
         {
             id: String(`${uuid()}`),
             key: "Terms",
-            href: "http://localhost:4000/terms"
+            href: "https://api-jsonresources-restapi-com-api.onrender.com/terms"
         },
     ]);
 
     return (
         <footer className="footer" id="">
             <article>
-                <span className="developer">Developed and managed by <a href="https://robertsims.netlify.app">robert sims</a> mern stack developer.</span>
+                <span className="developer">Developed and managed with <FaHeart /> by <a href="https://robertsims.netlify.app">robert sims</a> mern stack developer.</span>
                 <ul onDoubleClick={() => { setKeys(keys) }}>
                     {
                         keys.map((key) => (
@@ -38,7 +39,7 @@ function Footer() {
                         ))
                     }
                 </ul>
-                <p>jsonresources.restapi.com &copy;right {format(new Date(), "yyyy")}</p>
+                <p>jsonresources-api.com &copy;right {format(new Date(), "yyyy")}</p>
                 <br />
             </article>
         </footer>

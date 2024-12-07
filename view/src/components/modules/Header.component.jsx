@@ -5,7 +5,7 @@ function Header(props) {
     return (
         <header className="header" id="header">
             <article>
-                <h1>JSON Resources {String("{}")}</h1>
+                <h1>JSONResources Api {String("{}")}</h1>
                 <br />
                 <p>{props.content}</p>
                 <br />
